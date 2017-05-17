@@ -4,28 +4,24 @@
 using namespace std;
 
 int main() {
-    // // Simple example
-    // int i = 4;
-    // double d = 4.0;
-    // string s = "HackerRank";
-    // cout << "\ti: " << i << endl;
-    // cout << setprecision(1) << fixed << "\td: " << d  << endl;
-    // cout << "\ts: " << s << endl;
+    // Simple example
+    int i = 4;
+    double d = 4.0;
+    string s = "HackerRank ";
 
     string line;
     getline(cin, line);
-    int i = stoi(line);
+    int ints = stoi(line);
 
     getline(cin, line);
-    double d = stod(line);
+    double dubs = stod(line);
 
     getline(cin, line);
     string str = line;
 
-    string s = "HackerRank";
-    cout << i + d << endl;
-    cout << setprecision(1) << fixed << d + d  << endl;
-    cout << s + " " + str << endl;
+    cout << i + ints << endl;
+    cout << setprecision(1) << fixed << d + dubs  << endl;
+    cout << s + str << endl;
 
     return 0;
 }
